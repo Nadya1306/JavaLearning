@@ -9,9 +9,9 @@ public class Main {
 
         JavaLearning javaLearning = new JavaLearning();
 
-        String maxWordLength = javaLearning.devideSentences("Helllo world.What a nice day!It is going to rain.");
+        String maxWordSentence = javaLearning.devideSentences("Helllo world.What a nice day!It is going to rain.");
 
-        System.out.println(maxWordLength);
+        System.out.println(maxWordSentence);
 
 
 

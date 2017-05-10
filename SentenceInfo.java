@@ -2,21 +2,21 @@ package com.company;
 
 public class SentenceInfo {
 
-    private int wordLength;
+    private int sentenceLength;
 
     private String sentence;
 
 
-    public SentenceInfo(int wordLength, String sentence) {
+    public SentenceInfo(int sentenceLength, String sentence) {
 
-        this.wordLength = wordLength;
+        this.sentenceLength = sentenceLength;
 
         this.sentence = sentence;
     }
 
     public int getWordLength() {
 
-        return this.wordLength;
+        return this.sentenceLength;
     }
 
     public String getSentence() {
