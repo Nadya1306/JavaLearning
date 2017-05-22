@@ -1,53 +1,17 @@
 package com.company;
 
-
-
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) throws java.io.IOException {
+    public static void sumNumbersSystemOut(String[] args) throws Exception {
+
         Scanner scanner = new Scanner(System.in);
 
-        String name;
+        JavaLearningCalculator javaLearningAddNumbers = new JavaLearningCalculator();
 
-        System.out.println("Hello user, enter your name, please:");
+        int sum = javaLearningAddNumbers.sumOfNumbers(scanner.nextInt());
 
-
-        name = scanner.nextLine();
-
-        if (name == "Alice") {
-            System.out.println("Hello user " + name + "!");
-        } else if (name == "Bob") {
-            System.out.println("Hello user " + name + "!");
-        } else {
-            System.out.println("Hello user  !");
-
-
-//        switch (name){
-//
-//            case "Alice":
-//                System.out.println("Hello user " + name + "!");
-//
-//                break;
-//
-//            case "Bob":
-//                System.out.println("Hello user " + name + "!");
-//
-//                break;
-//
-//            default:
-//                System.out.println("Hello user  !");
-//
-//                break;
-//
-//        }
-
-
-        }
-
-
+        System.out.println(sum);
     }
 }
-
