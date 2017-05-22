@@ -4,7 +4,7 @@ package com.company;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public class JavaLearningAddNumbers {
+public class JavaLearningCalculator {
 
     public int sumOfNumbers( int number) throws Exception {
 
@@ -20,8 +20,5 @@ public class JavaLearningAddNumbers {
         }
 
         return sum;
-
     }
-
-
 }

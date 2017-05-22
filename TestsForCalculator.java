@@ -1,28 +1,15 @@
 package com.company;
 
-import com.company.JavaLearning;
-import com.company.JavaLearningAddNumbers;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.List;
+public class TestsForCalculator {
 
-public class Tests {
-
-    JavaLearningAddNumbers javaLearningAddNumbers = new JavaLearningAddNumbers();
-
-    @Test
-    public void testDeviedSentences() {
-        JavaLearning javaLearning = new JavaLearning();
-
-        String a = javaLearning.devideSentences("Helllo, world.What a nice day!It is going to rain.");
-
-        Assert.assertEquals("Helllo, world",a);
-    }
+    JavaLearningCalculator javaLearningAddNumbers = new JavaLearningCalculator();
 
     @Test
     public  void testSumOfNumbers() throws Exception {
-        JavaLearningAddNumbers javaLearningAddNumbers = new JavaLearningAddNumbers();
+        JavaLearningCalculator javaLearningAddNumbers = new JavaLearningCalculator();
 
         int a = javaLearningAddNumbers.sumOfNumbers(2);
 
@@ -46,12 +33,12 @@ public class Tests {
         int sum = javaLearningAddNumbers.sumOfNumbers(02);
         Assert.assertEquals(3,sum);
     }
+
     @Test
     public  void testSumOfNumber() throws Exception {
         int sum = javaLearningAddNumbers.sumOfNumbers(100);
         Assert.assertEquals(5050, sum);
     }
-
 }
 
 
