@@ -2,27 +2,43 @@ package com.company;
 
 
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) throws java.io.IOException {
+    public static void main(String[] args) throws Exception {
 
-        JavaLearning javaLearning = new JavaLearning();
+        Scanner scanner = new Scanner(System.in);
 
-        String maxWordSentence = javaLearning.devideSentences("Helllo world.What a nice day!It is going to rain.");
+        JavaLearningAddNumbers javaLearningAddNumbers = new JavaLearningAddNumbers();
 
-        System.out.println(maxWordSentence);
+        int sum = javaLearningAddNumbers.sumOfNumbers(scanner.nextInt());
 
-
-
-
-
-//        for (int word : words) {
-//            System.out.println(word);
-//        }
+        System.out.println(sum);
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //        Scanner scanner = new Scanner(System.in);

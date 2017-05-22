@@ -13,58 +13,36 @@ public class JavaLearning {
 
         String[] sentences = st.split("[.!]");
 
-        String longestSentence = null;
-        int longestSentenceLength = 0;
+        String sentenceWithMaxComma = null;
 
-        ArrayList<SentenceInfo> sentencesInfo = new ArrayList<SentenceInfo>();
+        int maxNumberOfCommas = 0;
 
         for (String sentence : sentences) {
 
-           // int longestWordLength = 0;
+            int numberOfCommas = countCommas(sentence);
 
-            int sentenceLength = sentence.split("[ ]").length;
+            if (maxNumberOfCommas < numberOfCommas) {
 
-            sentencesInfo.add(new SentenceInfo(sentenceLength, sentence));
+                maxNumberOfCommas = numberOfCommas;
 
-            if (longestSentenceLength<sentenceLength) {
-
-                longestSentenceLength = sentenceLength;
-
+                sentenceWithMaxComma = sentence;
             }
+        }
 
-                    longestSentence = new SentenceInfo(longestSentenceLength,sentence).getSentence();
+        return sentenceWithMaxComma;
+    }
 
-                }
+    private int countCommas(String string){
 
-//            for (String word : words) {
-//
-//                int wordLength = word.length();
-//
-//                if (longestWordLength < wordLength) {
-//
-//                    longestWordLength = wordLength;
+        char[] Array = string.toCharArray();
 
-//                    sentenceWithLongestWord = new SentenceInfo(longestWordLength, sentence).getSentence();
-//                }
-//            }
+        int numberOfCommas = 0;
 
-//            sentencesInfo.add(new SentenceInfo(longestSentence, sentence));
-//        }
-
-//        int longestWordLength = 0;
-//       // String sentenceWithLongestWord = null;
-//
-//        for (SentenceInfo sentenceInfo : sentencesInfo) {
-//
-//            if (sentenceInfo.getWordLength() > longestWordLength) {
-//
-//                longestWordLength = sentenceInfo.getWordLength();
-//
-//                sentenceWithLongestWord = sentenceInfo.getSentence();
-//            }
-
-
-
-        return longestSentence;
+        for (char c : Array) {
+            if (c == ',') {
+                numberOfCommas++;
+            }
+        }
+        return  numberOfCommas;
     }
 }
