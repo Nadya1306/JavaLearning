@@ -1,5 +1,4 @@
-package com.company;
-
+import com.company.JavaLearning;
 import org.junit.Assert;
 import org.junit.Test;
 
