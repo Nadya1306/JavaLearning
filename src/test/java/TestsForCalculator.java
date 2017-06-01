@@ -28,15 +28,15 @@ public class TestsForCalculator {
     }
 
     @Test
-    public  void testSumOfNumberWithFirstZero() throws Exception {
+    public  void testSumOfNumberWithFirstZero()throws Exception{
         int sum = javaLearningAddNumbers.addNumbers(02);
-        Assert.assertEquals(3,sum);
+        Assert.assertEquals(0,sum);
     }
 
     @Test
     public  void testSumOfNumber() throws Exception {
         int sum = javaLearningAddNumbers.addNumbers(100);
-        Assert.assertEquals(5050, sum);
+        Assert.assertEquals(2418, sum);
     }
 }
 
