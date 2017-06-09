@@ -74,4 +74,16 @@ public class JavaLearningArrays<T> {
 
         return arrayOfObjects;
     }
+
+    public boolean verifyThatElementInArrayIsExist(T[] arrayOfElements, T element){
+
+        for (T elementOfArray: arrayOfElements){
+
+            if(elementOfArray == element){
+
+                return true;
+            }
+            
+        } return false;
+    }
 }
