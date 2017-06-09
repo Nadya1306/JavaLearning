@@ -79,6 +79,20 @@ public class TestForNumbersArray {
 
         System.out.println(StringUtils.join(ArrayUtils.toString(reverseArray)));
     }
+
+    @Test
+    public void testForVerifyingThatElementInArrayIsExistIsTrue(){
+
+        Assert.assertTrue(javaLearningArrays.verifyThatElementInArrayIsExist(new Integer[]{10,2,40},2));
+
+    }
+
+    @Test
+    public  void testForVerifyingThatElementInArrayIsExistIsFalse(){
+
+        Assert.assertFalse(javaLearningArrays.verifyThatElementInArrayIsExist(new Integer[]{10,2,40},4));
+
+    }
 }
 
 
